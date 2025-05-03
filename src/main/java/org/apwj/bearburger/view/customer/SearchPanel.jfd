@@ -1,10 +1,10 @@
-JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.7" encoding: "UTF-8"
+JFDML JFormDesigner: "8.2.3.0.386" Java: "19.0.2" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq {par l {seq l {space :::p, comp label1:::::x}, seq {par l {seq {space :p:158:p, comp foodDetailsButton:::p:171:p, space :p:57:p, comp addToCartButton:::p:171:p}, seq l {space :p:54:p, par l {seq l {space :p:88:p, comp searchFoodTF:::p:309:p, space :p:26:p, comp searchButton:::p:156:p}, comp label5::l:p::p, comp scrollPane2:::p:636:p}}}, space :0:62:x}}, space :::p}}"
+			"$horizontalGroup": "par l {seq {par l {seq l {space :::p, comp label1:::::x}, seq {par l {seq {space :p:158:p, comp foodDetailsButton:::p:171:p, space :p:57:p, comp addToCartButton:::p:250:p}, seq l {space :p:54:p, par l {seq l {space :p:88:p, comp searchFoodTF:::p:309:p, space :p:26:p, comp searchButton:::p:156:p}, comp label5::l:p::p, comp scrollPane2:::p:636:p}}}, space :0:62:x}}, space :::p}}"
 			"$verticalGroup": "par l {seq l {space :p:28:p, comp label1:::p::p, space ::8:x, par l {comp searchFoodTF::l:p:41:p, comp searchButton::l:p:41:p}, space :p:18:p, comp label5:::p::p, space :::p, comp scrollPane2:::p:336:p, space :p:35:p, par b {comp foodDetailsButton::b:p:42:p, comp addToCartButton::b:p:42:p}, space :p:35:p}}"
 		} ) {
 			name: "panel"
@@ -32,14 +32,14 @@ new FormModel {
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "addToCartButton"
-				"text": "Add to Cart"
+				"text": "Visualizar documento"
 				"font": &Font0 new java.awt.Font( "Segoe UI", 1, 20 )
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addToCart", true ) )
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "addToCart", true ) )
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "foodDetailsButton"
-				"text": "View Details"
+				"text": "Descargar"
 				"font": #Font0
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "foodDetails", true ) )
 			} )

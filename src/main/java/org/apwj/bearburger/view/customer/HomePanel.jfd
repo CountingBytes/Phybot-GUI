@@ -1,18 +1,18 @@
-JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.7" encoding: "UTF-8"
+JFDML JFormDesigner: "8.2.3.0.386" Java: "19.0.2" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
 	root: new FormRoot {
 		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-			"$horizontalGroup": "par l {seq t {par l {comp userProfileButton::l:p:255:p, par t:l::p {comp searchButton::l::255:x, comp browseButton::l::255:x}, seq {space :::p, par l {par l:l::p {comp usernameLabel::l:::x, comp logoutLabel::l:p:249:p}, comp viewCart::l:p:255:p, comp foodCartButton::l:p:249:p}}, seq l {space :p:19:p, comp logo:::p:218:p}}, space ::36:x, comp subHomePanel:::::x}}"
-			"$verticalGroup": "par l {seq {space :::p, par l {seq {comp logo:::p:123:p, space :::p, comp browseButton:::p:52:p, space s:::p, comp searchButton:::p:52:p, space s:::p, comp foodCartButton:::p:52:p, space s:::p, comp userProfileButton:::p:52:p, space s:::p, comp viewCart:::p:55:p, space :p:9:p, comp usernameLabel:::p::p, space :::p, comp logoutLabel:::p::p, space :0:20:x}, comp subHomePanel:::::x}, space :::p}}"
+			"$horizontalGroup": "par l {seq t {par l {par l:::p {seq {space :::p, par l {par l:l::p {comp usernameLabel::l:::x, comp logoutLabel::::249:x}, comp viewCart::l:p:255:p, comp foodCartButton::::249:x}}, seq l {space :p:19:p, comp logo:::p:218:p}, seq l {space :::p, comp searchButton:::::x}}, seq {space :::p, par l {comp userProfileButton::l:p:249:p, comp browseButton::l:p:249:p}}}, space :p:35:p, comp subHomePanel:::::x, space :::p}}"
+			"$verticalGroup": "par l {seq {space :::p, par l {seq {comp logo:::p:123:p, space :::p, comp browseButton:::p:52:p, space s:::p, comp searchButton:::p:52:p, space :p:18:p, comp foodCartButton:::p:52:p, space s:::p, comp userProfileButton:::p:52:p, space s:::p, comp viewCart:::p:55:p, space :p:9:p, comp usernameLabel:::p::p, space :::p, comp logoutLabel:::p::p, space :0:75:x}, comp subHomePanel::t:::x}, space :::p}}"
 		} ) {
 			name: "panel"
 			auxiliary() {
 				"JavaCodeGenerator.variableModifiers": 1
 			}
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
-				"$horizontalGroup": "par l {space :0:728:x}"
+				"$horizontalGroup": "par l {space :0:729:x}"
 				"$verticalGroup": "par l {space :0:0:x}"
 			} ) {
 				name: "subHomePanel"
@@ -57,11 +57,12 @@ new FormModel {
 				name: "viewCart"
 				"text": "View Cart"
 				"font": new java.awt.Font( "Segoe UI", 1, 22 )
+				"visible": false
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "viewCart", true ) )
 			} )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "userProfileButton"
-				"text": "Diagnóstico"
+				"text": "Detalles"
 				"font": #Font0
 				"border": #LineBorder0
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "userProfile", true ) )

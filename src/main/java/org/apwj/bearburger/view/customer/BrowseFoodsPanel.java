@@ -11,6 +11,8 @@ import javax.swing.event.ListSelectionListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static org.apwj.bearburger.view.customer.CartPanel.TOTAL_COST_LABEL;
 import static org.apwj.bearburger.view.customer.CartPanel.TOTAL_FOODS_LABEL;
@@ -32,8 +34,12 @@ public class BrowseFoodsPanel extends JPanel {
         List<String> categories = foodDao.getAllCategory();
         DefaultListModel<String> categoryListModel = new DefaultListModel<>();
 
-        for (String category : categories) {
-            categoryListModel.addElement(category);
+//        for (String category : categories) {
+//            categoryListModel.addElement(category);
+//        }
+        
+        for(int i = 0; i < 5; i++) {
+        	categoryListModel.addElement("Sesión "+i);
         }
         categoryList.setModel(categoryListModel);
 
@@ -48,8 +54,29 @@ public class BrowseFoodsPanel extends JPanel {
                 for (String title : titles) {
                     titlesModel.addElement(title);
                 }
+                
+                DefaultListModel<String> listModel = new DefaultListModel<>();
+                
+                
+                Pattern p = Pattern.compile("\\d+");
+                Matcher m = p.matcher(selectedCategory);
+                int num;
+                
+                if (m.find()) {
+                    // m.group() es la porción de texto que coincide, p.ej. "1" en "Sesión 1"
+                    String numberStr = m.group();
+                    num = Integer.parseInt(numberStr);
+                } else {
+                    throw new NumberFormatException("No se encontró ningún número");
+                }
+            
+                	
+                	String texto = "Recuperación de codo semana " + num;
+                	listModel.addElement(texto);
+                
+                
 
-                foodTitleList.setModel(titlesModel);
+                foodTitleList.setModel(listModel);
 
                 foodDetailsButton.setEnabled(selectedTitle != null && selectedCategory != null);
                 addToCartButton.setEnabled(selectedTitle != null && selectedCategory != null);
@@ -120,13 +147,13 @@ public class BrowseFoodsPanel extends JPanel {
 
 		//======== panel ========
 		{
-			panel.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing
-			.border.EmptyBorder(0,0,0,0), "JF\u006frmDesi\u0067ner Ev\u0061luatio\u006e",javax.swing.border.TitledBorder
-			.CENTER,javax.swing.border.TitledBorder.BOTTOM,new java.awt.Font("Dialo\u0067",java.
-			awt.Font.BOLD,12),java.awt.Color.red),panel. getBorder()))
-			;panel. addPropertyChangeListener(new java.beans.PropertyChangeListener(){@Override public void propertyChange(java.beans.PropertyChangeEvent e
-			){if("borde\u0072".equals(e.getPropertyName()))throw new RuntimeException();}})
-			;
+			panel.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new
+			javax. swing. border. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax
+			. swing. border. TitledBorder. CENTER, javax. swing. border. TitledBorder. BOTTOM, new java
+			.awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ), java. awt
+			. Color. red) ,panel. getBorder( )) ); panel. addPropertyChangeListener (new java. beans.
+			PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .
+			equals (e .getPropertyName () )) throw new RuntimeException( ); }} );
 
 			//---- label1 ----
 			label1.setText("Sesiones");
@@ -151,11 +178,11 @@ public class BrowseFoodsPanel extends JPanel {
 			}
 
 			//---- label4 ----
-			label4.setText("Catagories");
+			label4.setText("Sesiones");
 			label4.setFont(new Font("Segoe UI Semibold", Font.BOLD, 21));
 
 			//---- label5 ----
-			label5.setText("Foods");
+			label5.setText("Informaci\u00f3n");
 			label5.setFont(new Font("Segoe UI Semibold", Font.BOLD, 21));
 
 			//---- addToCartButton ----

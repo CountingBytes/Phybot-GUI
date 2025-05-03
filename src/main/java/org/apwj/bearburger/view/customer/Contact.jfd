@@ -1,0 +1,349 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "19.0.2" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "panel"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "mensajes"
+				"background": new java.awt.Color( 78, 80, 82, 255 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "busqueda"
+					"background": new java.awt.Color( 128, 128, 128, 255 )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField1"
+						"text": "Buscar..."
+						"background": new java.awt.Color( 128, 128, 128, 255 )
+						"editable": false
+						"foreground": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"font": new java.awt.Font( "Segoe UI", 0, 14 )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 15
+						"y": 10
+						"width": 145
+						"height": 20
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label1"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/etool16/search.png" )
+						"foreground": sfield java.awt.Color red
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 185
+						"y": 10
+						"height": 25
+						"width": 25
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 15
+					"width": 240
+					"height": 40
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "medico_uno"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "foto_medico_uno"
+						"icon": &SwingIcon0 new com.jformdesigner.model.SwingIcon( 0, "/img/doctor_circular (1).png" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 5
+						"height": 55
+						"width": 60
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "nombre_medico_uno"
+						"text": "Dr. Muñiz"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 70
+						"y": 5
+						"width": 130
+						"height": 20
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "preview_uno"
+						"text": "Escribiendo..."
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 130
+						"height": 20
+						"x": 65
+						"y": 35
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 5
+					"y": 70
+					"width": 235
+					"height": 65
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "medico_dos"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "nombre_medico_dos"
+						"text": "Dra. fuente"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 130
+						"height": 20
+						"x": 65
+						"y": 5
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "preview_dos"
+						"text": "La próxima semana..."
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 130
+						"height": 20
+						"x": 65
+						"y": 35
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "foto_medico_uno3"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/doctor_circular_2 (1).png" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 60
+						"height": 55
+						"x": 5
+						"y": 5
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 235
+					"height": 65
+					"x": 5
+					"y": 150
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "medico_tres"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "nombre_medico_tre"
+						"text": "Dr. Peláez"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 130
+						"height": 20
+						"x": 60
+						"y": 5
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "preview_tres"
+						"text": "Ya estamos en..."
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 130
+						"height": 20
+						"x": 60
+						"y": 35
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "foto_medico_uno4"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/doctor2_circular_transparent (1).png" )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 60
+						"height": 55
+						"x": 5
+						"y": 5
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 235
+					"height": 65
+					"x": 5
+					"y": 230
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 0
+				"height": 420
+				"width": 255
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "conversacion"
+				"background": sfield java.awt.Color gray
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "Banner_medico"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "telefono"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 70
+						"height": 65
+						"x": 210
+						"y": 0
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "foto_medico_uno2"
+						"icon": #SwingIcon0
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 60
+						"height": 55
+						"x": 5
+						"y": 5
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "preview_uno2"
+						"text": "Escribiendo..."
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 130
+						"height": 20
+						"x": 70
+						"y": 35
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "nombre_medico_uno2"
+						"text": "Dr. Muñiz"
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"width": 130
+						"height": 20
+						"x": 70
+						"y": 10
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 0
+					"y": 0
+					"width": 420
+					"height": 65
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "foto_medico_chat2"
+					"background": &Color0 new java.awt.Color( 0, 0, 0, 255 )
+					"foreground": &Color1 new java.awt.Color( 0, 0, 0, 255 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/doctor_circular (1).png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 55
+					"height": 45
+					"x": 10
+					"y": 80
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "foto_medico_chat3"
+					"background": #Color0
+					"foreground": #Color1
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/iconfinder-3-avatar-2754579_120516.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 60
+					"height": 60
+					"x": 340
+					"y": 120
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "foto_medico_chat4"
+					"background": #Color0
+					"foreground": #Color1
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/doctor_circular (1).png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 55
+					"height": 45
+					"x": 10
+					"y": 205
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "text1"
+					"background": new java.awt.Color( 0, 153, 255, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label2"
+						"text": "Mañana tenemos revisión"
+						"foreground": sfield java.awt.Color white
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 5
+						"height": 25
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 70
+					"y": 90
+					"width": 150
+					"height": 30
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "text3"
+					"background": new java.awt.Color( 0, 204, 102, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label3"
+						"text": "OK doctor."
+						"foreground": sfield java.awt.Color white
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 5
+						"height": 20
+						"width": 69
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 95
+					"height": 30
+					"x": 230
+					"y": 135
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+					name: "text2"
+					"background": new java.awt.Color( 0, 153, 255, 255 )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "label4"
+						"text": "9:30 - 10:30."
+						"foreground": sfield java.awt.Color white
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+						"x": 5
+						"y": 5
+						"height": 25
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 95
+					"height": 30
+					"x": 70
+					"y": 215
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 260
+				"y": 0
+				"width": 415
+				"height": 380
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "Barra_mensaje"
+				"background": new java.awt.Color( 211, 211, 211, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "emojis"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/emoji_smile_icon_160172.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 0
+					"y": 0
+					"height": 40
+					"width": 45
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "attachments"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/attach-paperclip-symbol_icon-icons.com_73094.png" )
+					"font": new java.awt.Font( "Segoe UI", 0, 3 )
+					"preferredSize": new java.awt.Dimension( 24, 24 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 45
+					"height": 40
+					"x": 45
+					"y": 0
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "enviar"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/img/send_90420.png" )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 35
+					"height": 25
+					"x": 380
+					"y": 10
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "texto_mensaje"
+					"text": "Escribe aquí tu mensaje"
+					"foreground": sfield java.awt.Color gray
+					"background": new java.awt.Color( 211, 211, 211, 255 )
+					"border": new javax.swing.border.EmptyBorder( 5, 5, 5, 5 )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 105
+					"y": 10
+					"width": 255
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 260
+				"y": 380
+				"width": 415
+				"height": 40
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 675, 420 )
+		} )
+	}
+}

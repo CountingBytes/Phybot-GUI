@@ -32,7 +32,7 @@ public class ProfileModifyPanel extends JPanel {
         gendersButton.add(femaleRadioButton);
         gendersButton.add(otherRadioButton);
         this.loggedInUser = loggedInUser;
-        usernameLabel.setText(loggedInUser.getUsername());
+        usernameLabel.setText("Eduardo Rodríguez");
         emailLabel.setText(loggedInUser.getEmail());
         passwordTF.setText(loggedInUser.getPass());
         phoneTF.setText(loggedInUser.getPhone());

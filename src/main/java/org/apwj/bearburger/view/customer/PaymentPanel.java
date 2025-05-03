@@ -60,17 +60,19 @@ public class PaymentPanel extends JPanel {
 		nameTF = new JTextField();
 		cvvTF = new JPasswordField();
 		buyButton = new JButton();
+		label2 = new JLabel();
 
 		//======== panel ========
 		{
-			panel.setBorder(new javax.swing.border.CompoundBorder(new javax.swing.border.TitledBorder(new javax.swing.border.EmptyBorder(
-			0,0,0,0), "JF\u006frmDesi\u0067ner Ev\u0061luatio\u006e",javax.swing.border.TitledBorder.CENTER,javax.swing.border.TitledBorder
-			.BOTTOM,new java.awt.Font("Dialo\u0067",java.awt.Font.BOLD,12),java.awt.Color.
-			red),panel. getBorder()));panel. addPropertyChangeListener(new java.beans.PropertyChangeListener(){@Override public void propertyChange(java.
-			beans.PropertyChangeEvent e){if("borde\u0072".equals(e.getPropertyName()))throw new RuntimeException();}});
+			panel.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border
+			. EmptyBorder( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax. swing. border. TitledBorder. CENTER, javax
+			. swing. border. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,
+			12 ), java. awt. Color. red) ,panel. getBorder( )) ); panel. addPropertyChangeListener (new java. beans
+			. PropertyChangeListener( ){ @Override public void propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .equals (e .
+			getPropertyName () )) throw new RuntimeException( ); }} );
 
 			//---- label5 ----
-			label5.setText("Chateo");
+			label5.setText("Chat");
 			label5.setFont(new Font("Segoe UI", Font.BOLD, 45));
 			label5.setHorizontalAlignment(SwingConstants.CENTER);
 
@@ -142,6 +144,9 @@ public class PaymentPanel extends JPanel {
 			buyButton.setVisible(false);
 			buyButton.addActionListener(e -> buy(e));
 
+			//---- label2 ----
+			label2.setText("text");
+
 			GroupLayout panelLayout = new GroupLayout(panel);
 			panel.setLayout(panelLayout);
 			panelLayout.setHorizontalGroup(
@@ -174,7 +179,9 @@ public class PaymentPanel extends JPanel {
 									.addComponent(nameTF, GroupLayout.DEFAULT_SIZE, 1, Short.MAX_VALUE)
 									.addComponent(cardNumberTF, GroupLayout.DEFAULT_SIZE, 1, Short.MAX_VALUE)
 									.addComponent(expDateTF, GroupLayout.DEFAULT_SIZE, 1, Short.MAX_VALUE)
-									.addComponent(cvvTF, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 289, GroupLayout.PREFERRED_SIZE)))
+									.addComponent(cvvTF, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 289, GroupLayout.PREFERRED_SIZE))
+								.addGap(73, 73, 73)
+								.addComponent(label2))
 							.addGroup(panelLayout.createSequentialGroup()
 								.addGap(298, 298, 298)
 								.addComponent(buyButton, GroupLayout.PREFERRED_SIZE, 143, GroupLayout.PREFERRED_SIZE)))
@@ -196,7 +203,8 @@ public class PaymentPanel extends JPanel {
 						.addGap(18, 18, 18)
 						.addGroup(panelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 							.addComponent(label7)
-							.addComponent(nameTF, GroupLayout.PREFERRED_SIZE, 38, GroupLayout.PREFERRED_SIZE))
+							.addComponent(nameTF, GroupLayout.PREFERRED_SIZE, 38, GroupLayout.PREFERRED_SIZE)
+							.addComponent(label2))
 						.addGap(18, 18, 18)
 						.addGroup(panelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
 							.addComponent(label8)
@@ -211,7 +219,7 @@ public class PaymentPanel extends JPanel {
 							.addComponent(cvvTF, GroupLayout.PREFERRED_SIZE, 38, GroupLayout.PREFERRED_SIZE))
 						.addGap(27, 27, 27)
 						.addComponent(buyButton, GroupLayout.PREFERRED_SIZE, 41, GroupLayout.PREFERRED_SIZE)
-						.addContainerGap(325, Short.MAX_VALUE))
+						.addContainerGap(309, Short.MAX_VALUE))
 			);
 		}
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
@@ -235,5 +243,6 @@ public class PaymentPanel extends JPanel {
 	private JTextField nameTF;
 	private JPasswordField cvvTF;
 	private JButton buyButton;
+	private JLabel label2;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

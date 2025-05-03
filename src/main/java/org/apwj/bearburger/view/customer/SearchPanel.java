@@ -188,7 +188,7 @@ public class SearchPanel extends JPanel {
 			label5.setVisible(false);
 
 			//---- addToCartButton ----
-			addToCartButton.setText("Add to Cart");
+			addToCartButton.setText("Previsualizar");
 			addToCartButton.setFont(new Font("Segoe UI", Font.BOLD, 20));
 			addToCartButton.addActionListener(e -> {
 //			addToCart(e);
@@ -196,7 +196,7 @@ public class SearchPanel extends JPanel {
 		});
 
 			//---- foodDetailsButton ----
-			foodDetailsButton.setText("View Details");
+			foodDetailsButton.setText("Descargar");
 			foodDetailsButton.setFont(new Font("Segoe UI", Font.BOLD, 20));
 			foodDetailsButton.addActionListener(e -> foodDetails(e));
 
