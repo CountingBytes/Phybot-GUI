@@ -21,55 +21,64 @@ public class MainPanel {
 
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
-        panel = new JPanel();
-        buttonGetStarted = new JButton();
-        label2 = new JLabel();
+		// Generated using JFormDesigner Evaluation license - Javier Pelaez
+		panel = new JPanel();
+		buttonGetStarted = new JButton();
+		label2 = new JLabel();
 
-        //======== panel ========
-        {
-            panel.setMaximumSize(new Dimension(1025, 575));
+		//======== panel ========
+		{
+			panel.setMaximumSize(new Dimension(1025, 575));
+			panel.setForeground(new Color(0xeeeeee));
+			panel.setBorder (new javax. swing. border. CompoundBorder( new javax .swing .border .TitledBorder (new javax. swing. border. EmptyBorder
+			( 0, 0, 0, 0) , "JF\u006frmDes\u0069gner \u0045valua\u0074ion", javax. swing. border. TitledBorder. CENTER, javax. swing. border
+			. TitledBorder. BOTTOM, new java .awt .Font ("D\u0069alog" ,java .awt .Font .BOLD ,12 ), java. awt
+			. Color. red) ,panel. getBorder( )) ); panel. addPropertyChangeListener (new java. beans. PropertyChangeListener( ){ @Override public void
+			propertyChange (java .beans .PropertyChangeEvent e) {if ("\u0062order" .equals (e .getPropertyName () )) throw new RuntimeException( )
+			; }} );
 
-            //---- buttonGetStarted ----
-            buttonGetStarted.setText("Get Started");
-            buttonGetStarted.setFont(new Font("Segoe UI", Font.BOLD, 22));
-            buttonGetStarted.setBorderPainted(false);
-            buttonGetStarted.setBackground(new Color(102, 153, 255));
-            buttonGetStarted.setForeground(Color.white);
-            buttonGetStarted.addActionListener(e -> {
+			//---- buttonGetStarted ----
+			buttonGetStarted.setText("Get Started");
+			buttonGetStarted.setFont(new Font("Segoe UI", Font.BOLD, 22));
+			buttonGetStarted.setBorderPainted(false);
+			buttonGetStarted.setBackground(new Color(0x6699ff));
+			buttonGetStarted.setForeground(Color.white);
+			buttonGetStarted.addActionListener(e -> {
 			getStarted(e);
 			getStarted(e);
 		});
 
-            //---- label2 ----
-            label2.setIcon(new ImageIcon(getClass().getResource("/img/logo-1.png")));
-            label2.setHorizontalAlignment(SwingConstants.CENTER);
+			//---- label2 ----
+			label2.setIcon(new ImageIcon(getClass().getResource("/img/medicalrehab.png")));
+			label2.setHorizontalAlignment(SwingConstants.CENTER);
 
-            GroupLayout panelLayout = new GroupLayout(panel);
-            panel.setLayout(panelLayout);
-            panelLayout.setHorizontalGroup(
-                panelLayout.createParallelGroup()
-                    .addComponent(label2, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
-                    .addGroup(panelLayout.createSequentialGroup()
-                        .addGap(427, 427, 427)
-                        .addComponent(buttonGetStarted, GroupLayout.PREFERRED_SIZE, 166, GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(432, Short.MAX_VALUE))
-            );
-            panelLayout.setVerticalGroup(
-                panelLayout.createParallelGroup()
-                    .addGroup(GroupLayout.Alignment.TRAILING, panelLayout.createSequentialGroup()
-                        .addContainerGap(35, Short.MAX_VALUE)
-                        .addComponent(label2, GroupLayout.PREFERRED_SIZE, 418, GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(buttonGetStarted, GroupLayout.PREFERRED_SIZE, 45, GroupLayout.PREFERRED_SIZE)
-                        .addGap(59, 59, 59))
-            );
-        }
+			GroupLayout panelLayout = new GroupLayout(panel);
+			panel.setLayout(panelLayout);
+			panelLayout.setHorizontalGroup(
+				panelLayout.createParallelGroup()
+					.addComponent(label2, GroupLayout.Alignment.TRAILING, GroupLayout.DEFAULT_SIZE, 1025, Short.MAX_VALUE)
+					.addGroup(panelLayout.createSequentialGroup()
+						.addGap(416, 416, 416)
+						.addComponent(buttonGetStarted, GroupLayout.PREFERRED_SIZE, 166, GroupLayout.PREFERRED_SIZE)
+						.addContainerGap(443, Short.MAX_VALUE))
+			);
+			panelLayout.setVerticalGroup(
+				panelLayout.createParallelGroup()
+					.addGroup(GroupLayout.Alignment.TRAILING, panelLayout.createSequentialGroup()
+						.addContainerGap()
+						.addComponent(label2, GroupLayout.DEFAULT_SIZE, 483, Short.MAX_VALUE)
+						.addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+						.addComponent(buttonGetStarted, GroupLayout.PREFERRED_SIZE, 45, GroupLayout.PREFERRED_SIZE)
+						.addGap(35, 35, 35))
+			);
+		}
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
-    public JPanel panel;
-    private JButton buttonGetStarted;
-    private JLabel label2;
+	// Generated using JFormDesigner Evaluation license - Javier Pelaez
+	public JPanel panel;
+	private JButton buttonGetStarted;
+	private JLabel label2;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

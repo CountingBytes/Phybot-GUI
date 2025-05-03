@@ -1,4 +1,4 @@
-JFDML JFormDesigner: "7.0.7.0.1134" Java: "17.0.3" encoding: "UTF-8"
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.7" encoding: "UTF-8"
 
 new FormModel {
 	contentType: "form/swing"
@@ -13,7 +13,7 @@ new FormModel {
 			}
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
-				"text": "Browse Foods"
+				"text": "Sesiones"
 				"font": new java.awt.Font( "Segoe UI", 1, 45 )
 				"horizontalAlignment": 0
 			} )
